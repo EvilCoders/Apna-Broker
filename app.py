@@ -32,10 +32,10 @@ def predict():
     pred = pred.transpose()
     pred.columns = features
 
-    # make prediction
+    # # make prediction
     y  = xgb_model.predict(pred)
 
-    return jsonify(result=y)
+    return pd.Series(y).to_json(orient='values')
 
 @app.route('/hello', methods=['POST'])
 def hello():
