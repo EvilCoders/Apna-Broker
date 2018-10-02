@@ -19,6 +19,10 @@ body {
   margin-top: 150px;
 }
 
+.section-head {
+  margin: 50px 0px;
+}
+
 .redirect-button {
   margin-top: 50px;
 }
@@ -91,10 +95,4 @@ body {
 .predict-main-sec {
   /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3; */
   margin: 100px 0px;
-}
-
-.form-detail {
-  margin: 0px auto;
-  margin-top: 50px;
-  width: 60%;
 }
