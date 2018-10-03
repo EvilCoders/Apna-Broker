@@ -96,3 +96,11 @@ body {
   /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3; */
   margin: 100px 0px;
 }
+
+.ng-touched .ng-valid {
+  border: 2px green solid;
+}
+
+.ng-touched .ng-invalid {
+  border: 2px red solid;
+}

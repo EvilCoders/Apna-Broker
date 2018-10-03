@@ -9,8 +9,8 @@
   angular.module('MainApp')
   .controller('PredictController', PredictController);
 
-  PredictController.$inject = ['PredictRentService'];
-  function PredictController (PredictRentService) {
+  PredictController.$inject = ['PredictRentService', '$window'];
+  function PredictController (PredictRentService, $window) {
 
     const PredictCtrl = this;
 
@@ -120,17 +120,14 @@
     PredictCtrl.getResult = function () {
       let checkEmpty = false;
 
-      console.log(PredictCtrl.detail);
       PredictCtrl.response = PredictRentService.getResult(PredictCtrl.detail);
       PredictCtrl.response.then(function (response) {
         console.log(response.data);
         PredictCtrl.rentRange = response.data[0];
-        console.log(response.status);
+        $window.scrollTo(0, 0);
       }, function (response) {
         console.log(response.status);
       })
     }
-
-
   }
 })()
