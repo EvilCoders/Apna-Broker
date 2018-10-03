@@ -31,18 +31,6 @@
       templateUrl: 'src/templates/predict.template.html',
       controller: 'PredictController as PredictCtrl'
     })
-
-    // Result Page
-    .state('result', {
-      url: '/result',
-      templateUrl: 'src/templates/result.template.html',
-      controller: 'ResultController as ResultCtrl',
-      resolve: {
-        data: ['PredictRentService', function (PredictRentService) {
-          return PredictRentService.getResult();
-        }]
-      }
-    })
   }
 
 })()
