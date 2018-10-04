@@ -104,3 +104,21 @@ body {
 .ng-touched .ng-invalid {
   border: 2px red solid;
 }
+
+.loader {
+  position: absolute;
+  /* top: 0px; */
+  /* left: 0px; */
+  z-index: 1000;
+  width: 95vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 25%;
+}
