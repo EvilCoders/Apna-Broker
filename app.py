@@ -1,7 +1,10 @@
+#!/usr/bin env python
+
 import numpy as np
 import pandas as pd
 from flask import Flask, abort, jsonify, request
 import pickle
+from flask_accept import accept
 
 with open('model.pkl', 'rb') as model:
     xgb_model = pickle.load(model)
@@ -27,6 +30,9 @@ app = Flask(__name__)
 @app.route('/api', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
+    f = open('inputs.txt', 'a+')
+    f.write(str(data))
+    f.write('\n')
     pred = [data[x] for x in features]
     pred = pd.DataFrame(pred)
     pred = pred.transpose()
@@ -34,6 +40,9 @@ def predict():
 
     # # make prediction
     y  = xgb_model.predict(pred)
+    f.write(str(y))
+    f.write('\n')
+    f.close()
 
     return pd.Series(y).to_json(orient='values')
 
