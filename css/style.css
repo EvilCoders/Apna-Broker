@@ -1,0 +1,106 @@
+body {
+  margin-top: 70px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.one-view {
+  height: 90vh;
+  padding: 50px 0px;
+}
+
+.section-1 {
+  background: linear-gradient(90.75deg, #FFF4F4 0.26%, #FFF4F4 0.27%, #81CEF4 53.44%), #FEFFFF;
+}
+
+.section-1-detail {
+  margin-top: 150px;
+}
+
+.section-head {
+  margin: 50px 0px;
+}
+
+.redirect-button {
+  margin-top: 50px;
+}
+
+.section-title > h1{
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 36px;
+  font-size: 2.5em;
+  text-align: center;
+  color: #323C5A;
+  position: relative;
+}
+
+.section-title > h1::after {
+  content: "";
+  background-color: #F89A1D;
+  position: absolute;
+  height: 6px;
+  right: 48%;
+  bottom: -20px;
+  width: 48px;
+}
+
+.section-desc-content {
+  font-family: Work Sans;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  text-align: center;
+  color: #323C5A;
+  padding: 0px 100px;
+  padding-top: 50px;
+}
+
+.features-section {
+  padding: 50px 0px;
+}
+
+.features-card-list {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.features-card-list .features-cards {
+  padding: 0px 25px;
+}
+
+.top-image {
+  margin-top: -10px;
+}
+
+.features-card-list .features-cards .section-card-desc {
+  text-align: center;
+}
+
+.card-img {
+  margin-bottom: 10px;
+}
+
+.section-3 {
+  background-color: #EEEEEE;
+}
+
+.section-3-img {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.predict-main-sec {
+  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3; */
+  margin: 100px 0px;
+}
+
+.ng-touched .ng-valid {
+  border: 2px green solid;
+}
+
+.ng-touched .ng-invalid {
+  border: 2px red solid;
+}
