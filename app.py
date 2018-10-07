@@ -4,7 +4,8 @@ import numpy as np
 import pandas as pd
 from flask import Flask, abort, jsonify, request
 import pickle
-from flask_accept import accept
+# from flask_accept import accept
+from flask_cors import CORS
 
 with open('model.pkl', 'rb') as model:
     xgb_model = pickle.load(model)
@@ -25,6 +26,7 @@ features = ['longitude', 'latitude', 'gym', 'lift', 'swimming_pool',
 # print(xgb_model.predict(c))
 
 app = Flask(__name__)
+CORS(app, supports_credentials=True)
 
 
 @app.route('/api', methods=['POST'])
