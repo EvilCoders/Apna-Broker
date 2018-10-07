@@ -17,7 +17,7 @@
     RentSrvc.getResult = function (item, response) {
       return $http({
         method: 'POST',
-        url: 'http://192.168.43.124:5000/api',
+        url: 'http://707fd9a8.ngrok.io/api',
         data: item
       })
     }
