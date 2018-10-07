@@ -16,6 +16,10 @@
 
     PredictCtrl.rentRange = null;
 
+    PredictCtrl.loader = false;
+
+    PredictCtrl.disableButton = false;
+
     PredictCtrl.detail = {
       longitude: null,
       latitude: null,
@@ -120,13 +124,21 @@
     PredictCtrl.getResult = function () {
       let checkEmpty = false;
 
+      PredictCtrl.rentRange = null;
+      PredictCtrl.loader = true;
+      PredictCtrl.disableButton = true;
+
       PredictCtrl.response = PredictRentService.getResult(PredictCtrl.detail);
       PredictCtrl.response.then(function (response) {
         console.log(response.data);
         PredictCtrl.rentRange = response.data[0];
         $window.scrollTo(0, 0);
+        PredictCtrl.loader = false;
+        PredictCtrl.disableButton = false;
       }, function (response) {
         console.log(response.status);
+        PredictCtrl.loader = false;
+        PredictCtrl.disableButton = false;
       })
     }
   }

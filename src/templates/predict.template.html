@@ -1,3 +1,8 @@
+<div ng-if="PredictCtrl.loader" class="loader">
+  <div>
+    <img src="src/assets/images/ajax-loader.gif" width="200px" height="200px">
+  </div>
+</div>
 <main>
   <section class="predict-main-sec">
     <div class="container">
@@ -83,7 +88,7 @@
                     </select>
                   </div>
                 </div>
-                <button ng-disabled="PredictForm.$invalid" type="submit" ng-click="PredictCtrl.getResult();" class="btn btn-lg bg-primary text-light">Submit Details</button>
+                <button ng-disabled="PredictForm.$invalid || PredictCtrl.disableButton" type="submit" ng-click="PredictCtrl.getResult();" class="btn btn-lg bg-primary text-light">Submit Details</button>
               </form>
             </div>
           </div>
