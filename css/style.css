@@ -20,7 +20,7 @@ body {
 }
 
 .section-head {
-  margin: 50px 0px;
+  margin-bottom: 50px;
 }
 
 .redirect-button {
@@ -85,7 +85,9 @@ body {
 
 .section-3 {
   background-color: #EEEEEE;
+  padding: 50px 0px;
 }
+
 
 .section-3-img {
   text-align: center;

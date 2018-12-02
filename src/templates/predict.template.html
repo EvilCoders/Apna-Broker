@@ -44,8 +44,8 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-12 col-md-6">
-                    <label for="propertySize" class="font-weight-bold">Property Size</label>
-                    <input required type="number" name="propertySize" id="propertySize" ng-model="PredictCtrl.detail.property_size" class="form-control" placeholder="In Square Feet">
+                    <label for="propertySize" class="font-weight-bold">Property Size(In Square Feet)</label>
+                    <input required type="number" name="propertySize" id="propertySize" min="200" ng-model="PredictCtrl.detail.property_size" class="form-control" placeholder="min value: 200">
                   </div>
                   <div class="form-group col-12 col-md-6">
                     <label for="noOfBathroom" class="font-weight-bold">No. of Bathrooms</label>

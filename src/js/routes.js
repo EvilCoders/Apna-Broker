@@ -31,6 +31,11 @@
       templateUrl: 'src/templates/predict.template.html',
       controller: 'PredictController as PredictCtrl'
     })
+    // About Page
+    .state('aboutus', {
+      url: '/aboutus',
+      templateUrl: 'src/templates/about.template.html'
+    })
   }
 
 })()
