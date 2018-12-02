@@ -110,7 +110,7 @@
       type_RK1: "RK 1"
     };
 
-    // method for stoding selected type as 1, and rest to 0
+    // method for storing selected type as 1, and rest to 0
     PredictCtrl.setBuildingTypeValue = function () {
       for (let key in PredictCtrl.buildingTypeDetail) {
         PredictCtrl.buildingTypeDetail[key] = +(PredictCtrl.buildingType === key);
