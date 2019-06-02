@@ -6,27 +6,6 @@ body {
   margin: 0px;
 }
 
-.one-view {
-  height: 90vh;
-  padding: 50px 0px;
-}
-
-.section-1 {
-  background: linear-gradient(90.75deg, #FFF4F4 0.26%, #FFF4F4 0.27%, #81CEF4 53.44%), #FEFFFF;
-}
-
-.section-1-detail {
-  margin-top: 150px;
-}
-
-.section-head {
-  margin-bottom: 50px;
-}
-
-.redirect-button {
-  margin-top: 50px;
-}
-
 .section-title > h1{
   font-family: Poppins;
   font-weight: 600;
@@ -88,6 +67,11 @@ body {
   padding: 50px 0px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .section-3-img {
   text-align: center;
@@ -95,8 +79,7 @@ body {
 }
 
 .predict-main-sec {
-  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3; */
-  margin: 100px 0px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3;
 }
 
 .ng-touched .ng-valid {
@@ -107,20 +90,26 @@ body {
   border: 2px red solid;
 }
 
-.loader {
+.my-loader {
   position: absolute;
-  /* top: 0px; */
-  /* left: 0px; */
+  top: 45%;
+  left: 45%;
   z-index: 1000;
   width: 95vw;
   height: 90vh;
   justify-content: center;
   align-items: center;
 }
+.my-loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #323C5A; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 0.8s linear infinite;
+}
 
-.loader div {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  margin-top: 25%;
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

@@ -51,7 +51,7 @@
       parking_TWO_WHEELER: "Two Wheeler"
     };
 
-    // method for stoding selected type as 1, and rest to 0
+    // method for storing selected type as 1, and rest to 0
     PredictCtrl.setParkingTypeValue = function () {
       for (let key in PredictCtrl.parkingCategoryDetail) {
         PredictCtrl.parkingCategoryDetail[key] = +(PredictCtrl.parkingCategory === key);
@@ -78,7 +78,7 @@
       building_type_IH: "Gated Community Villa"
     };
 
-    // method for stoding selected type as 1, and rest to 0
+    // method for storing selected type as 1, and rest to 0
     PredictCtrl.setBuildingCategoryValue = function () {
       for (let key in PredictCtrl.buildingCategoryDetail) {
         PredictCtrl.buildingCategoryDetail[key] = +(PredictCtrl.buildingCategory === key);
@@ -130,7 +130,6 @@
 
       PredictCtrl.response = PredictRentService.getResult(PredictCtrl.detail);
       PredictCtrl.response.then(function (response) {
-        console.log(response.data);
         PredictCtrl.rentRange = response.data[0];
         $window.scrollTo(0, 0);
         PredictCtrl.loader = false;
