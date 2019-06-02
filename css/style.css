@@ -90,20 +90,26 @@ input[type=number]::-webkit-outer-spin-button {
   border: 2px red solid;
 }
 
-.loader {
+.my-loader {
   position: absolute;
-  /* top: 0px; */
-  /* left: 0px; */
+  top: 45%;
+  left: 45%;
   z-index: 1000;
   width: 95vw;
   height: 90vh;
   justify-content: center;
   align-items: center;
 }
+.my-loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #323C5A; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 0.8s linear infinite;
+}
 
-.loader div {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  margin-top: 25%;
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

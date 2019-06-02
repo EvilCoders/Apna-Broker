@@ -130,7 +130,6 @@
 
       PredictCtrl.response = PredictRentService.getResult(PredictCtrl.detail);
       PredictCtrl.response.then(function (response) {
-        console.log(response.data);
         PredictCtrl.rentRange = response.data[0];
         $window.scrollTo(0, 0);
         PredictCtrl.loader = false;
