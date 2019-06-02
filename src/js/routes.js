@@ -17,27 +17,21 @@
 
     $stateProvider
 
-      // // Home-Page
-      // .state("home", {
-      //   url: "/",
-      //   templateUrl: "src/templates/homepage.template.html"
-      // })
-
       // Predict Page
       .state("home", {
         url: "/",
         templateUrl: "src/templates/predict.template.html",
         controller: "PredictController as PredictCtrl"
       })
-      // About Page
-      .state("about", {
-        url: "/about",
-        templateUrl: "src/templates/about.template.html"
-      })
-      // Contact Page
-      .state("contact", {
-        url: "/contact",
-        templateUrl: "src/templates/contact.template.html"
-      });
+      // // About Page
+      // .state("about", {
+      //   url: "/about",
+      //   templateUrl: "src/templates/about.template.html"
+      // })
+      // // Contact Page
+      // .state("contact", {
+      //   url: "/contact",
+      //   templateUrl: "src/templates/contact.template.html"
+      // });
   }
 })();

@@ -6,27 +6,6 @@ body {
   margin: 0px;
 }
 
-.one-view {
-  height: 90vh;
-  padding: 50px 0px;
-}
-
-.section-1 {
-  background: linear-gradient(90.75deg, #FFF4F4 0.26%, #FFF4F4 0.27%, #81CEF4 53.44%), #FEFFFF;
-}
-
-.section-1-detail {
-  margin-top: 150px;
-}
-
-.section-head {
-  margin-bottom: 50px;
-}
-
-.redirect-button {
-  margin-top: 50px;
-}
-
 .section-title > h1{
   font-family: Poppins;
   font-weight: 600;
@@ -100,8 +79,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .predict-main-sec {
-  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3; */
-  margin: 100px 0px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4E2F3;
 }
 
 .ng-touched .ng-valid {
