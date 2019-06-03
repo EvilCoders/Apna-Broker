@@ -37,36 +37,6 @@ body {
   padding-top: 50px;
 }
 
-.features-section {
-  padding: 50px 0px;
-}
-
-.features-card-list {
-  text-align: center;
-  margin-top: 60px;
-}
-
-.features-card-list .features-cards {
-  padding: 0px 25px;
-}
-
-.top-image {
-  margin-top: -10px;
-}
-
-.features-card-list .features-cards .section-card-desc {
-  text-align: center;
-}
-
-.card-img {
-  margin-bottom: 10px;
-}
-
-.section-3 {
-  background-color: #EEEEEE;
-  padding: 50px 0px;
-}
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -113,3 +83,49 @@ input[type=number]::-webkit-outer-spin-button {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* ********************************************************** */
+/* Responsive view styling starts */
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .section-title > h1 {
+    font-size: 1.6em;
+  }
+
+}
+
+@media (max-width: 577px) {
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+}
+
+/* Responsive view styling ends */
+/* ********************************************************** */
